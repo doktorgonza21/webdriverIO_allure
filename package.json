@@ -13,11 +13,10 @@
         "chromedriver": "^106.0.1",
         "cross-env": "^7.0.3",
         "geckodriver": "^3.2.0",
-        "wdio-docker-service": "^3.2.1",
         "wdio-chromedriver-service": "^8.0.0",
+        "wdio-docker-service": "^3.2.1",
         "wdio-edgedriver-service": "^2.0.0",
         "wdio-geckodriver-service": "^4.0.0"
-
     },
     "scripts": {
         "wdio": "npx cross-env NODE_ENV=resources wdio run configs/wdio.conf.js",
@@ -28,7 +27,8 @@
         "chrome": "npx cross-env NODE_ENV=resources wdio run configs/chrome.conf.js",
         "chrome:one:spec": "npx cross-env NODE_ENV=resources wdio run configs/chrome.conf.js --spec footer.spec.js",
         "chrome:all:specs": "npx cross-env NODE_ENV=resources wdio run configs/chrome.conf.js --suite testSuite",
-        "multi:run": "npx cross-env NODE_ENV=resources wdio run configs/multi.conf.js"
+        "multi:run": "npx cross-env NODE_ENV=resources wdio run configs/multi.conf.js",
+        "docker:tests": "npx cross-env NODE_ENV=resources wdio run configs/docker.conf.js"
     },
     "dependencies": {
         "allure-commandline": "^2.18.1"

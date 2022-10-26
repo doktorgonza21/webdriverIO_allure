@@ -20,6 +20,12 @@
     3.5. Run the "**npm run chrome:all:specs**" command for run all spec files as test suite using Chrome browser.<br>
     3.6. Run the "**npm run multi:run**" command for run tests using FireFox nad Chrome browsers.<br>
 4. For generate Allure report run the "**npm run create_report**" command.
-5. For open report run the "**npm run open:rep**" command. 
+5. For open report run the "**npm run open:rep**" command.
+
+##### **If you want to run tests using docker:**
+
+1. Run "**docker-compose -f docker-compose.yml up -d**" command to execute docker-compose file
+2. Run "**npm run docker:tests**" command to run tests
+3. Run "**docker-compose -f docker-compose.yml down**" command to stop all execution
 
 
