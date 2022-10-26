@@ -1,0 +1,8 @@
+node_modules/
+allure-report/
+allure-results/
+temp/
+packagecopy.json
+wdio.confcopy.js
+dockerfile
+.dockerignore
