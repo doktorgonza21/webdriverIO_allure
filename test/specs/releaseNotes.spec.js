@@ -18,6 +18,7 @@ describe('Release Notes page elements tests', () => {
     it('Check the "Release Notes" page "Fax" filters', async () => {
         await browser.url(`https://telnyx.com/release-notes`)
         await releaseNotesPage.faxCheckBoxLocator.click()
+        await browser.pause(500)
         await expect(releaseNotesPage.resultsListLocator).toHaveTextContaining(bucket.faxResults())
     });
 
